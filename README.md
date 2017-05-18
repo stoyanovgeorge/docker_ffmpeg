@@ -41,9 +41,27 @@ The following libraries are also installed from source:
 4. Container Formats:
 	* [Ogg](https://www.xiph.org/ogg/ "Ogg Container Format") - Ogg is a free, open container format maintained by the Xiph.Org Foundation.
 
+### Prerequisities
+
+You need to install git and docker. A complete guide how to install docker could be found [here](https://docs.docker.com/engine/installation/ "Docker Installation Instructions"). And [here](https://www.atlassian.com/git/tutorials/install-git "GIT Installation Guide") you can find installation tutorial for GIT. 
+
 
 ### Usage Examples
 
+You need to clone the project and then to build the docker image with the following commands:
+
+```
+git clone https://github.com/stoyanovgeorge/docker_ffmpeg.git
+docker build -t "test_image:dockerfile" .
+```
+
+The resulting image:
+
+```
+$ docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+test_image          dockerfile          ac408a793f30        13 seconds ago      1.13 GB
+```
 
 ### Bugs and Missing Features
 
