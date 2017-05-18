@@ -29,30 +29,4 @@ echo "All required libs had been installed"
 echo "Start compilation of ffmpeg"
 sh $PWD/scripts/ffmpeg.sh
 echo "FFMPEG compilation has finished"
-
-# Removing of the install directory where the sources of the additional libraries were saved
-
-while true; do
-    read -p "Do you wish to remove the install directory [Y/n]? " rmv
-    rmv=${rmv,,}                                      # lower all the cases in the rmv variable
-    case $rmv in
-        [y]* | "" ) rm -rf $HOME/install 
-	echo "The install directory was successfully removed"; break;;     # check if the "rmv" var starts with the letter Y or for Enter key
-        [n]* ) echo "The install directory won't be removed"; exit;;
-        * ) echo "Please try again [Y/n]! ";;
-    esac
-done
-
-# Reboot of the system
-
-while true; do
-    read -p "Do you wish to reboot your machine [Y/n]? " rmv
-    rmv=${rmv,,}                                      # lower all the cases in the rmv variable
-    case $rmv in
-        [y]* | "" ) echo "Your machine will be restarted in 5 seconds..." 
-	sleep 5 
-	reboot; break;;     # check if the "rmv" var starts with the letter Y or for Enter key
-        [n]* ) echo "Please reboot manually your machine later on!"; exit;;
-        * ) echo "Please try again [Y/n]! ";;
-    esac
-done
+rm -rf $HOME/install 
