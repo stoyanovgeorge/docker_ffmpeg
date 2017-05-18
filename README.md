@@ -55,13 +55,21 @@ git clone https://github.com/stoyanovgeorge/docker_ffmpeg.git
 docker build -t "test_image:dockerfile" .
 ```
 
-The resulting image:
+This will create an image called test_image:
 
 ```
 $ docker images
 REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
 test_image          dockerfile          ac408a793f30        13 seconds ago      1.13 GB
 ```
+
+If you want to connect to the image you can do it using the command: 
+
+```
+docker run -it ac408a793f30 /bin/bash
+```
+
+If you want to use the ffmpeg you can just run: 
 
 ### Bugs and Missing Features
 

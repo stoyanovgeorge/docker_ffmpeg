@@ -29,4 +29,5 @@ echo "All required libs had been installed"
 echo "Start compilation of ffmpeg"
 sh $PWD/scripts/ffmpeg.sh
 echo "FFMPEG compilation has finished"
-rm -rf $HOME/install 
+sh $PWD/scripts/uninstall.sh
+rm -rf $HOME/install
