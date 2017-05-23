@@ -2,9 +2,9 @@
 
 echo "Start the system update..."
 apt-get update
+apt-get install apt-utils -y
 apt-get upgrade -y
 apt-get dist-upgrade -y
-apt-get install apt-utils
 apt-get install \
 autoconf automake build-essential libopenjpeg5 fonts-dejavu-core fontconfig-config \
 i965-va-driver git libtool pkg-config texinfo yasm libass-dev mesa-vdpau-drivers checkinstall \
