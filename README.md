@@ -60,7 +60,7 @@ This will create an image called test_image:
 ```
 $ docker images
 REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
-test_image          dockerfile          ac408a793f30        13 seconds ago      1.13 GB
+test_image          dockerfile          ac408a793f30        13 seconds ago      820 MB
 ```
 
 If you want to connect to the image you can do it using the command: 
