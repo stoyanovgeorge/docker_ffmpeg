@@ -6,8 +6,9 @@ CMD		["--help"]
 ENTRYPOINT	["ffmpeg"]
 
 WORKDIR /home
-RUN apt-get update
-RUN apt-get install git -y
-RUN git clone https://github.com/stoyanovgeorge/docker_ffmpeg.git
+RUN apt-get update \
+	&& apt-get install git -y \
+	&& git clone https://github.com/stoyanovgeorge/docker_ffmpeg.git
+
 WORKDIR /home/docker_ffmpeg/
 RUN sh compilation.sh

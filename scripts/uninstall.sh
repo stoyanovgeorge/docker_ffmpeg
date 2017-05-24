@@ -2,8 +2,20 @@
 
 echo "Uninstall of some unused packages"
 
-apt-get remove \
-autoconf automake build-essential git pkg-config nasm yasm mesa-vdpau-drivers checkinstall \
-zlib1g-dev cmake python-dev python-pip python-tk apt-utils -y
+rm -rf /var/lib/apt/lists/*
+apt-get purge -y \
+	autoconf \
+	automake \
+	build-essential \
+	git \
+	pkg-config \
+	yasm \
+	mesa-vdpau-drivers \
+	checkinstall \
+	cmake \
+	python-dev \
+	python-pip \
+	python-tk \
+	apt-utils
 apt-get clean -y
 apt-get autoremove -y
