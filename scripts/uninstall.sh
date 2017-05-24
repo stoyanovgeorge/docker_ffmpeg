@@ -2,7 +2,7 @@
 
 echo "Uninstall of some unused packages"
 
-rm -rf /var/lib/apt/lists/*
+rm -rf /var/lib/apt/lists/* && rm -rf $HOME/install
 apt-get purge -y \
 	autoconf \
 	automake \
@@ -17,5 +17,5 @@ apt-get purge -y \
 	python-pip \
 	python-tk \
 	apt-utils
-apt-get clean -y
-apt-get autoremove -y
+apt-get clean -y 
+apt-get autoremove -y 

@@ -5,6 +5,8 @@ cd $HOME/install
 git clone https://github.com/FFmpeg/FFmpeg.git
 cd $HOME/install/FFmpeg
 ./configure \
+	--arch=x64 \
+	--target-os=linux \
 	--enable-gpl \
 	--enable-ladspa \
 	--enable-libpulse \

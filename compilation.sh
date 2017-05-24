@@ -32,4 +32,3 @@ echo "Start compilation of ffmpeg"
 sh $PWD/scripts/ffmpeg.sh
 echo "FFMPEG compilation has finished"
 sh $PWD/scripts/uninstall.sh
-rm -rf $HOME/install
