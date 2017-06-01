@@ -4,17 +4,17 @@ echo "Uninstall of some unused packages"
 
 rm -rf /var/lib/apt/lists/* && rm -rf $HOME/install
 apt-get purge -y \
-#	autoconf \
+	autoconf \
 	automake \
 	build-essential \
 	git \
 	pkg-config \
 	yasm \
 	mesa-vdpau-drivers \
-#	checkinstall \
+	checkinstall \
 	cmake \
 #	python-dev \
-#	python-pip \
+	python-pip \
 #	python-tk \
 	apt-utils
 apt-get clean -y 
