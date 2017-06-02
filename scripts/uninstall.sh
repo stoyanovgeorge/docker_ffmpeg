@@ -14,7 +14,7 @@ apt-get purge -y \
 	checkinstall \
 	cmake \
 #	python-dev \
-	python-pip \
+#	python-pip \
 #	python-tk \
 	apt-utils
 apt-get clean -y 
