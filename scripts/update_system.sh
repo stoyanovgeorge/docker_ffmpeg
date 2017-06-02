@@ -18,7 +18,6 @@ apt-get install \
 	pkg-config \
 	texinfo \
 	yasm \
-	libass-dev \
 	mesa-vdpau-drivers \
 	checkinstall \
 	zlib1g-dev \
