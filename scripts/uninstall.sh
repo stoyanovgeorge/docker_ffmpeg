@@ -2,7 +2,7 @@
 
 echo "Uninstall of some unused packages"
 
-rm -rf /var/lib/apt/lists/* && rm -rf $HOME/install
+rm -rf /var/lib/apt/lists/*
 apt-get purge -y \
 	autoconf \
 	automake \
